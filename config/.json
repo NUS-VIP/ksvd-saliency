@@ -1,0 +1,58 @@
+{
+	"root": "/Sync/Data/Saliency",
+	"path": {
+		"dataset": "/Sync/Data/Saliency/dataset/",
+		"stimuli": "/Sync/Data/Saliency/dataset//stimuli",
+		"maps": {
+			"fixation": "/Sync/Data/Saliency/dataset//fixation_maps",
+			"feature": "/Sync/Data/Saliency/data//feature_maps",
+			"saliency": "/Sync/Data/Saliency/data//saliency_maps",
+			"heat": "/Sync/Data/Saliency/data//heat_maps"
+		},
+		"labels": "/Sync/Data/Saliency/dataset//labels",
+		"eye": "/Sync/Data/Saliency/dataset//eye",
+		"raw": "/Sync/Data/Saliency/dataset//eye/raw",
+		"data": "/Sync/Data/Saliency/data/",
+		"fig": "/Sync/Data/Saliency/data//figures"
+	},
+	"file": {
+		"fixations": "/Sync/Data/Saliency/dataset//eye/fixations.mat"
+	},
+	"eye": {
+		"radius": 26
+	},
+	"ext": ".jpg",
+	"ml": {
+		"nSplit": 10
+	},
+	"out": {
+		"sigma": 7.2,
+		"width": 256,
+		"height": 192
+	},
+	"model": {
+		"hou": {
+			"colorChannels": "LAB",
+			"blurSigma": 0,
+			"mapWidth": 240,
+			"resizeToInput": 1,
+			"subtractMin": 1
+		},
+		"aim": {
+			"scale": 0.25
+		},
+		"sun": {
+			"scale": 0.25
+		},
+		"myobj": {
+			"ms": {
+				"spatial": 8,
+				"range": 6,
+				"minArea": 100
+			},
+			"ers": {
+				"nSegment": 100
+			}
+		}
+	}
+}

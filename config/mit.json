@@ -1,0 +1,29 @@
+{
+	"root": ".",
+	"path": {
+		"dataset": "./data/mit",
+		"stimuli": "./data/mit/stimuli",
+		"maps": {
+			"fixation": "./data/mit/fixation_maps",
+			"feature": "./data/mit/feature_maps",
+			"saliency": "./data/mit/saliency_maps"
+		},
+		"eye": "./data/mit/eye",
+		"data": "./data/mit"
+	},
+	"file": {
+		"fixations": "./data/mit/eye/fixations.mat"
+	},
+	"eye": {
+		"radius": 35
+	},
+	"ext": ".jpg",
+	"ml": {
+		"nSplit": 10
+	},
+	"out": {
+		"sigma": 8.75,
+		"width": 256,
+		"height": 256
+	}
+}
